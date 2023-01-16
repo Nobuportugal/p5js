@@ -20,10 +20,9 @@ let flippedVideo;
 // To store the classification
 let label = "";
 
-
 // Load the model first
 function preload() {
-  classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/YyhIDC0GU/model.json');
+  classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/uz0fWPuJY/model.json');
 }
 
 function setup() {
@@ -66,7 +65,6 @@ function gotResult(error, results) {
   // The results are in an array ordered by confidence.
   // console.log(results[0]);
   label = results[0].label;
-
   // Classifiy again!
   classifyVideo();
 }
