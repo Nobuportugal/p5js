@@ -54,7 +54,6 @@ function draw() {
   //text(confidence, width / 5, height - 4);
   text(label2, width / 2, heigt -30);
   //text(confidence2, width / 2, height - 4);
-  
 }
 
 // Get a prediction for the current video frame
