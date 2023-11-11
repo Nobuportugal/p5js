@@ -51,9 +51,9 @@ function draw() {
   textSize(16);
   textAlign(CENTER);
   text(label, width / 5, height - 30);
-  text(confidence, width / 5, height - 4);
+  //text(confidence, width / 5, height - 4);
   text(label2, width / 2, heigt -30);
-  text(confidence2, width / 2, height - 4);
+  //text(confidence2, width / 2, height - 4);
   
 }
 
