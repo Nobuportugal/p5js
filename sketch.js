@@ -52,7 +52,7 @@ function draw() {
   textAlign(CENTER);
   text(label, width / 5, height - 30);
   text(confidence, width / 5, height - 4);
-  text(label2, width / 2, heigt -30);
+  text(label2, width / 2, height -30);
   text(confidence2, width / 2, height - 4);
 }
 
@@ -72,9 +72,9 @@ function gotResult(error, results) {
   // The results are in an array ordered by confidence.
   // console.log(results[0&1]);
   label = results[0].label;
-  confidence = nf(result[0].confidence, 0, 2);
+  confidence = nf(results[0].confidence, 0, 2);
   label2 = results[1].label;
-  confidence2 = nf(result[1].confidence, 0, 2);
+  confidence2 = nf(results[1].confidence, 0, 2);
   // Classifiy again!
   classifyVideo();
 }
