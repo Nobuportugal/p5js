@@ -54,10 +54,10 @@ function draw() {
   textAlign(CENTER);
   text(label, width / 5, height - 30);
   text(confidence, width / 5, height - 4);
-  text(label2, width / 2, height -30);
+  text(label2, width / 2, height - 30);
   text(confidence2, width / 2, height - 4);
-  text(label3, width *4 / 5, height -30);
-  text(confidence3, width *4 / 5, height - 4);
+  text(label3, width * 0.8, height - 30);
+  text(confidence3, width * 0.8, height - 4);
 }
 
 // Get a prediction for the current video frame
@@ -81,6 +81,7 @@ function gotResult(error, results) {
   confidence2 = nf(results[1].confidence, 0, 2);
   label3 = results[2].label;
   confidence3 = nf(results[2].confidence, 0, 2);
+  
   // Classifiy again!
   classifyVideo();
 }
