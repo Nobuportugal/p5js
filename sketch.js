@@ -52,10 +52,10 @@ function draw() {
   fill(255);
   textSize(16);
   textAlign(CENTER);
-  text(label, width / 5, height - 30);
-  text(confidence, width / 5, height - 4);
-  text(label2, width / 2, height - 30);
-  text(confidence2, width / 2, height - 4);
+  text(label, width * 0.2, height - 30);
+  text(confidence, width * 0.2, height - 4);
+  text(label2, width * 0.5, height - 30);
+  text(confidence2, width * 0.5, height - 4);
   text(label3, width * 0.8, height - 30);
   text(confidence3, width * 0.8, height - 4);
 }
