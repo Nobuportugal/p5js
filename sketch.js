@@ -20,9 +20,11 @@ let flippedVideo;
 // To store the classification
 let label = "";
 let label2 = "";
+let label3 = "";
 // & confidence
 let confidence = "";
 let confidence2 = "";
+let confidence3 = "";
 
 // Load the model first
 function preload() {
@@ -54,6 +56,8 @@ function draw() {
   text(confidence, width / 5, height - 4);
   text(label2, width / 2, height -30);
   text(confidence2, width / 2, height - 4);
+  text(label3, width *4 / 5, height -30);
+  text(confidence3, width *4 / 5, height - 4);
 }
 
 // Get a prediction for the current video frame
@@ -75,6 +79,8 @@ function gotResult(error, results) {
   confidence = nf(results[0].confidence, 0, 2);
   label2 = results[1].label;
   confidence2 = nf(results[1].confidence, 0, 2);
+  label3 = results[2].label;
+  confidence3 = nf(results[2].confidence, 0, 2);
   // Classifiy again!
   classifyVideo();
 }
